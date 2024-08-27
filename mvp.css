@@ -2,7 +2,7 @@
 
 :root {
     --active-brightness: 0.85;
-    --border-radius: 3px;
+    --border-radius: 0px;
     --box-shadow: 2px 2px 10px;
     --color-accent: #118bee15;
     --color-bg: #fff;
@@ -13,7 +13,7 @@
     --color-secondary: #920de9;
     --color-secondary-accent: #920de90b;
     --color-shadow: #f4f4f4;
-    --color-table: #111;
+    --color-table: #222;
     --color-text: #222;
     --color-text-secondary: #999;
     --color-text-white: #eee;
@@ -190,6 +190,11 @@ nav ul li:hover ul {
     display: block;
 }
 
+nav ul li a {
+    color: var(--color-text-white);
+    text-decoration: none;
+}
+
 nav ul li ul {
     background: var(--color-bg);
     border: 1px solid var(--color-bg-secondary);
@@ -218,6 +223,7 @@ nav ul li ul::before {
 
 nav ul li ul li,
 nav ul li ul li a {
+    color: var(--color-link);
     display: block;
 }
 
@@ -485,7 +491,7 @@ dialog {
 
 /* Tables */
 table {
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid var(--color-table);
     border-radius: var(--border-radius);
     border-spacing: 0;
     display: inline-block;
@@ -505,7 +511,7 @@ table tr {
 }
 
 table td {
-    border: 0.5px solid var(--color-bg-secondary);
+    border: 0.5px solid var(--color-table);
 }
 
 table thead {
