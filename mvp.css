@@ -2,7 +2,7 @@
 
 :root {
     --active-brightness: 0.85;
-    --border-radius: 5px;
+    --border-radius: 3px;
     --box-shadow: 2px 2px 10px;
     --color-accent: #118bee15;
     --color-bg: #fff;
@@ -13,7 +13,7 @@
     --color-secondary: #920de9;
     --color-secondary-accent: #920de90b;
     --color-shadow: #f4f4f4;
-    --color-table: #118bee;
+    --color-table: #111;
     --color-text: #222;
     --color-text-secondary: #999;
     --color-text-white: #eee;
@@ -77,14 +77,19 @@ header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 0.5rem 3rem;
+    padding: 1.0rem 3rem;
     background: var(--color-bg);
 }
 
-main {
-    padding: 1rem 3rem;
+header {
+    height: 50px;
+    /* position: absolute;
+    inset: 0;
+    margin: 0 auto; */
+    padding: 0rem 3rem;
+    color: var(--color-text-white);
+    background: var(--color-bg-black);
 }
-
 
 footer {
     color: var(--color-text-white);
@@ -95,7 +100,7 @@ hr {
     background-color: var(--color-bg-secondary);
     border: none;
     height: 1px;
-    margin: 4rem 0;
+    margin: 2rem 0 0rem 0;
     width: 100%;
 }
 
@@ -151,7 +156,7 @@ header a strong {
 }
 
 header nav img {
-    margin: 1rem 0;
+    margin: 0rem 0;
 }
 
 section header {
@@ -249,6 +254,7 @@ h6 {
 h1,
 h2 {
     color: var(--color-primary);
+    margin: 1.0rem 0 0.5rem 0;
 }
 
 mark {
@@ -265,7 +271,7 @@ ul li {
 }
 
 p {
-    margin: 1.0rem 1.0rem 1.0rem 1.0rem;
+    margin: 0.5rem 1.0rem 1.0rem 1.0rem;
     padding: 0;
     width: 100%;
     text-align: justify;
@@ -487,13 +493,19 @@ table {
     overflow-x: auto;
     padding: 0;
     white-space: nowrap;
+    vertical-align: top;
 }
 
 table td,
 table th,
 table tr {
     padding: 0.4rem 0.8rem;
-    text-align: var(--justify-important);
+    text-align: var(--justify-normal);
+    vertical-align: top;
+}
+
+table td {
+    border: 0.5px solid var(--color-bg-secondary);
 }
 
 table thead {
@@ -518,9 +530,9 @@ table tr td:first-child {
     text-align: var(--justify-normal);
 }
 
-table tr:nth-child(even) {
+/* table tr:nth-child(even) {
     background-color: var(--color-accent);
-}
+} */
 
 /* Quotes */
 blockquote {
